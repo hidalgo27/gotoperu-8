@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e5ca6f8-a237-4dd8-bb53-0e380d037528" name="Default Changelist" comment="" />
+    <list default="true" id="3e5ca6f8-a237-4dd8-bb53-0e380d037528" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/demo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/design.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/emails/response.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/mail/default.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/Form/FormpageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/Form/FormpageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +42,9 @@
   </component>
   <component name="EditorConfigPreviewManager">
     <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/resources/views/page/index.blade.php" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -125,6 +157,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kQbn2dJlAU0uIotBG4L0sNUZmS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -154,11 +187,28 @@
       <workItem from="1605704934028" duration="2276000" />
       <workItem from="1605824837938" duration="3153000" />
       <workItem from="1605881767996" duration="2177000" />
+      <workItem from="1605968664556" duration="379000" />
+      <workItem from="1606140779939" duration="27000" />
+      <workItem from="1606315238191" duration="12423000" />
+      <workItem from="1606487247191" duration="37000" />
+      <workItem from="1606487333555" duration="262000" />
+      <workItem from="1606569831165" duration="11237000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="76" key="#EditorConfig" timestamp="1605881823003">
@@ -169,6 +219,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state x="320" y="125" width="800" height="723" key="#Intentions/0.25.1440.875@0.25.1440.875" timestamp="1605637278221" />
+    <state x="540" y="386" key="NewPhpFileDialog" timestamp="1606683440978">
+      <screen x="0" y="25" width="1440" height="875" />
+    </state>
+    <state x="540" y="386" key="NewPhpFileDialog/0.25.1440.875@0.25.1440.875" timestamp="1606683440978" />
     <state x="100" y="125" width="1240" height="675" key="dock-window-1" timestamp="1605655625734">
       <screen x="0" y="25" width="1440" height="875" />
     </state>
@@ -177,9 +231,10 @@
       <screen x="0" y="25" width="1440" height="875" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.25.1440.875@0.25.1440.875" timestamp="1605707340421" />
-    <state x="385" y="214" width="670" height="676" key="search.everywhere.popup" timestamp="1605649920144">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="385" y="194" width="670" height="696" key="search.everywhere.popup" timestamp="1606570268987">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="385" y="194" width="670" height="696" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1606570268987" />
     <state x="385" y="214" width="670" height="676" key="search.everywhere.popup/0.25.1440.875@0.25.1440.875" timestamp="1605649920144" />
   </component>
 </project>

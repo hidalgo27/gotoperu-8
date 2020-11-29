@@ -1,47 +1,53 @@
 <template>
-    <div class="rgba-white-9 p-3">
-        <form @submit.prevent="agregar">
+    <div class="rgba-white-9 pt-4 px-3">
+        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
             <div class="row">
                 <div class="col">
-                    <el-select
-                        v-model="destino"
-                        multiple
-                        collapse-tags
-                        class="w-100"
-                        type="danger"
-                        placeholder="Destinations">
-                        <el-option
-                            v-for="item in destinations"
-                            :key="item.id"
-                            :label="item.nombre"
-                            :value="item.nombre">
-                        </el-option>
-                    </el-select>
+                    <el-form-item prop="destino">
+                        <el-select
+                            v-model="ruleForm.destino"
+                            multiple
+                            collapse-tags
+                            class="w-100"
+                            type="danger"
+                            placeholder="Destinations">
+                            <el-option
+                                v-for="item in ruleForm.destinations"
+                                :key="item.id"
+                                :label="item.nombre"
+                                :value="item.nombre">
+                            </el-option>
+                        </el-select>
+                    </el-form-item>
                 </div>
                 <div class="col">
-                    <el-select
-                        v-model="category"
-                        multiple
-                        collapse-tags
-                        class="w-100"
-                        placeholder="Style">
-                        <el-option
-                            v-for="item in categories"
-                            :key="item.id"
-                            :label="item.nombre"
-                            :value="item.nombre">
-                        </el-option>
-                    </el-select>
+                    <el-form-item prop="category">
+                        <el-select
+                            v-model="ruleForm.category"
+                            multiple
+                            collapse-tags
+                            class="w-100"
+                            placeholder="Style">
+                            <el-option
+                                v-for="item in ruleForm.categories"
+                                :key="item.id"
+                                :label="item.nombre"
+                                :value="item.nombre">
+                            </el-option>
+                        </el-select>
+                    </el-form-item>
                 </div>
                 <div class="col">
-                    <el-input placeholder="Travelers" type="number" v-model="pasajeros"></el-input>
+                    <el-form-item prop="pasajeros">
+                        <el-input placeholder="Travelers" type="number" v-model="ruleForm.pasajeros"></el-input>
+                    </el-form-item>
                 </div>
                 <div class="col">
-                    <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="dialogVisible = true">Design my Trip</el-button>
+                    <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="ruleForm.dialogVisible = true">Design my Trip</el-button>
                 </div>
 
                 <el-dialog
-                    :visible.sync="dialogVisible"
+                    :visible.sync="ruleForm.dialogVisible"
                     width="40%"
                     top="10vh"
 
@@ -52,62 +58,77 @@
                             <p>Necesitamos un poco más de información para crear su itinerario:</p>
                         </div>
                         <div class="col-12">
-                            <el-input size="small" placeholder="Full Name" v-model="name" prefix-icon="el-icon-user"></el-input>
-                        </div>
-                        <div class="col-12 my-3">
-                            <el-input size="small" placeholder="Email" v-model="email" prefix-icon="el-icon-date"></el-input>
-                        </div>
-                        <div class="col-12">
-                            <vue-tel-input v-model="phone"></vue-tel-input>
-                        </div>
-                        <div class="col-6 my-3">
-                            <el-input size="small" type="number" min="1" placeholder="Trip duration in days" v-model="duration" prefix-icon="el-icon-sunny"></el-input>
-                        </div>
-                        <div class="col-6 my-3">
-                            <el-date-picker
-                                v-model="date"
-                                type="date"
-                                size="small"
-                                placeholder="Travel date"
-                                class="w-100"
-                                :picker-options="pickerOptions">
-                            </el-date-picker>
+                            <el-form-item prop="name">
+                                <el-input size="small" placeholder="Full Name" v-model="ruleForm.name" prefix-icon="el-icon-user"></el-input>
+                            </el-form-item>
                         </div>
                         <div class="col-12">
-                            <el-select
-                                v-model="plan"
-                                collapse-tags
-                                size="small"
-                                class="w-100"
-                                placeholder="What stage of planning are you in?">
-                                <el-option
-                                    v-for="item in options_plan"
-                                    :key="item.value"
-                                    :label="item.label"
-                                    :value="item.value">
-                                </el-option>
-                            </el-select>
+                            <el-form-item prop="email">
+                                <el-input size="small" placeholder="Email" v-model="ruleForm.email" prefix-icon="el-icon-date"></el-input>
+                            </el-form-item>
                         </div>
-                        <div class="col mt-3">
-                            <el-input
-                                type="textarea"
-                                autosize
-                                prefix-icon="el-icon-sunny"
-                                :autosize="{ minRows: 2, maxRows: 4}"
-                                placeholder="Any notes or special requests?"
-                                v-model="commend">
-                            </el-input>
+                        <div class="col-12">
+                            <el-form-item prop="phone" class="input_phone_intel">
+                                <vue-tel-input v-model="ruleForm.phone"></vue-tel-input>
+                            </el-form-item>
+                        </div>
+                        <div class="col-6">
+                            <el-form-item prop="duration">
+                                <el-input size="small" type="number" min="1" placeholder="Trip duration in days" v-model="ruleForm.duration" prefix-icon="el-icon-sunny"></el-input>
+                            </el-form-item>
+                        </div>
+                        <div class="col-6">
+                            <el-form-item prop="date">
+                                <el-date-picker
+                                    v-model="ruleForm.date"
+                                    type="date"
+                                    size="small"
+                                    placeholder="Travel date"
+                                    class="w-100"
+                                    :picker-options="ruleForm.pickerOptions">
+                                </el-date-picker>
+                            </el-form-item>
+                        </div>
+                        <div class="col-12">
+                            <el-form-item prop="plan">
+                                <el-select
+                                    v-model="ruleForm.plan"
+                                    collapse-tags
+                                    size="small"
+                                    class="w-100"
+                                    placeholder="What stage of planning are you in?">
+                                    <el-option
+                                        v-for="item in ruleForm.options_plan"
+                                        :key="item.value"
+                                        :label="item.label"
+                                        :value="item.value">
+                                    </el-option>
+                                </el-select>
+                            </el-form-item>
+                        </div>
+                        <div class="col">
+                            <el-form-item prop="commend">
+                                <el-input
+                                    type="textarea"
+                                    autosize
+                                    prefix-icon="el-icon-sunny"
+                                    :autosize="{ minRows: 2, maxRows: 4}"
+                                    placeholder="Any notes or special requests?"
+                                    v-model="ruleForm.commend">
+                                </el-input>
+                            </el-form-item>
                         </div>
                     </div>
                     <span slot="footer" class="dialog-footer">
-                    <el-button @click="dialogVisible = false">Cancel</el-button>
-                    <el-button type="submit" @click="dialogVisible = false">
-                        Enviar <i class="fas fa-circle-notch fa-spin "></i>
+                    <el-button @click="ruleForm.dialogVisible = false">Cancel</el-button>
+                    <el-button type="submit" @click="submitForm('ruleForm')">
+                        <span v-show="ruleForm.loadingsend">Enviar</span> <i class="el-icon-loading" v-show="ruleForm.loadingdesign"></i>
                     </el-button>
+                         <el-button @click="resetForm('ruleForm')">Reset</el-button>
                     </span>
                 </el-dialog>
             </div>
-        </form>
+        </el-form>
     </div>
 </template>
 
@@ -115,41 +136,65 @@
 export default {
     data() {
         return {
+            ruleForm: {
+                options_plan: [
+                    {value: 'Still dreaming / researching', label: 'Still dreaming / researching'},
+                    {
+                        value: 'Definitely traveling, not sure which country yet',
+                        label: 'Definitely traveling, not sure which country yet'
+                    },
+                    {value: 'I want to book a trip', label: 'I want to book a trip'}
+                ],
+                category: [],
+                destino: [],
+                pasajeros: '',
+                name: '',
+                email: '',
+                phone: '',
+                duration: '',
+                plan: '',
+                date: '',
+                commend: '',
+                loadingdesign: false,
+                loadingsend: true,
+                dialogVisible: false,
+                pickerOptions: {
+                    disabledDate(time) {
+                        return time.getTime() < Date.now();
+                    }
+                },
 
-            options_plan: [
-                {value: 'Still dreaming / researching', label: 'Still dreaming / researching'},
-                {value: 'Definitely traveling, not sure which country yet', label: 'Definitely traveling, not sure which country yet'},
-                {value: 'I want to book a trip', label: 'I want to book a trip'}
-            ],
-            category: [],
-            destino: [],
-            pasajeros: '',
-            name:'',
-            email:'',
-            phone:'',
-            duration:'',
-            plan: '',
-            date:'',
-            commend:'',
-            dialogVisible: false,
-            pickerOptions: {
-                disabledDate(time) {
-                    return time.getTime() < Date.now();
-                }
+                destinations: [],
+                categories: [],
+
+                // fullscreenLoading: true,
             },
-
-            destinations: [],
-            categories: [],
+            rules: {
+                name: [
+                    { required: true, message: 'Please input Activity name', trigger: 'blur' },
+                    // { min: 3, max: 5, message: 'Length should be 3 to 5', trigger: 'blur' }
+                ],
+                email: [
+                    { required: true, message: 'Please input Activity email', trigger: 'blur' },
+                    { type: 'email', message: 'Please input correct email address', trigger: ['blur', 'change'] }
+                ]
+                // phone: [
+                //     { required: true, message: 'Please select Activity phone', trigger: 'blur' }
+                // ]
+                // date1: [
+                //     { type: 'date', required: true, message: 'Please pick a date', trigger: 'change' }
+                // ]
+            }
         }
     },
 
     created(){
         axios.get('/loaddestinos/destinos').then(res=>{
-            this.destinations = res.data;
+            this.ruleForm.destinations = res.data;
         });
 
         axios.get('/loadcategory/category').then(res=>{
-            this.categories = res.data;
+            this.ruleForm.categories = res.data;
         })
     },
 
@@ -160,7 +205,91 @@ export default {
                     done();
                 })
                 .catch(_ => {});
+        },
+
+        // openFullScreen2() {
+        //     const loading = this.$loading({
+        //         lock: true,
+        //         text: 'Loading',
+        //         spinner: 'el-icon-loading',
+        //         background: 'rgba(0, 0, 0, 0.7)'
+        //     });
+        //     setTimeout(() => {
+        //         loading.close();
+        //     }, 2000);
+        // },
+
+        submitForm(formName){
+            this.$refs[formName].validate((valid) => {
+                if (valid) {
+                    // alert('submit!');
+                    let obj = {
+                        el_destino: this.ruleForm.destino,
+                        el_category: this.ruleForm.category,
+                        el_pasajeros: this.ruleForm.pasajeros,
+
+                        el_nombre: this.ruleForm.name,
+                        el_email: this.ruleForm.email,
+                        el_telefono: this.ruleForm.phone,
+                        el_duracion: this.ruleForm.duration,
+                        el_fecha: this.ruleForm.date,
+                        el_plan: this.ruleForm.plan,
+                        el_textarea: this.ruleForm.commend,
+
+                        tap_form_show: this.ruleForm.tap_form_show,
+
+                    };
+                    console.log(obj);
+                    const self = this;
+                    this.ruleForm.loadingdesign = true;
+                    this.ruleForm.loadingsend = false;
+                    // this.btnviewdesign = false;
+                    // this.tap_form_show = false;
+                    // this.formshow = true;
+                    axios.post('/formulario-diseno', obj)
+                        .then((res) =>{
+                            this.ruleForm.dialogVisible = false;
+                            this.ruleForm.loadingdesign = false;
+                            this.ruleForm.loadingsend = true;
+                            // const datoServidor = res.data;
+                            // this.datos.push(datoServidor);
+                            // console.log(datoServidor);
+                            // this.$forceUpdate();
+                            // console.log(this.categoriasSeleccionadosForm);
+
+                            this.$confirm('This will permanently delete the file. Continue?', 'Warning', {
+                                confirmButtonText: 'OK',
+                                type: 'success',
+                                center: true
+                            }).then(() => {
+                                this.$message({
+                                    type: 'success',
+                                    message: 'Gracias'
+                                });
+                                this.$refs[formName].resetFields();
+                            }).catch(() => {
+                                this.$message({
+                                    type: 'info',
+                                    message: 'Delete canceled'
+                                });
+                            });
+                        })
+                } else {
+                    console.log('error submit!!');
+                    return false;
+                }
+            });
+
+            // if(this.ruleForm.name.trim() === '' || this.ruleForm.email.trim() === ''){
+            //     alert('Por favor complete "Nombre" o "Email"');
+            //     return;
+            // }
+
+        },
+        resetForm(formName) {
+            this.$refs[formName].resetFields();
         }
+
     }
 }
 </script>
@@ -184,5 +313,8 @@ export default {
 }
 .el-picker-panel, .el-select-dropdown{
     z-index: 3003 !important;
+}
+.input_phone_intel .el-form-item__content{
+    line-height: inherit !important;
 }
 </style>

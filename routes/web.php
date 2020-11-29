@@ -112,3 +112,8 @@ Route::get('/loadcategory/category', [
     'uses' => 'App\Http\Controllers\Page\Form\FormpageController@categoryform',
     'as' => 'categoryform_path',
 ]);
+
+Route::post('/formulario-diseno', [
+    'uses' => 'App\Http\Controllers\Page\Form\FormpageController@formulario_diseno',
+    'as' => 'formulario_diseno_path',
+]);

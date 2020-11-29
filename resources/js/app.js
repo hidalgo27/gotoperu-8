@@ -14,7 +14,9 @@ Vue.use(VueTelInput);
 
 //
 import ElementUI from 'element-ui';
+// import Loading from "element-ui/packages/loading/src";
 import locale from "element-ui/src/locale/lang/es";
+// Vue.use(Loading);
 Vue.use(ElementUI, {locale});
 
 // import Swiper from "swiper";
