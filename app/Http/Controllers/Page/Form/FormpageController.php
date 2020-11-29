@@ -116,7 +116,7 @@ class FormpageController extends Controller
         $correo->plan = $plan;
         $correo->comment = $comentario;
         Mail::to('hidalgochponce@gmail.com')->send(new DesignMailable($correo));
-        Mail::to('hidalgochponce2@gmail.com')->send(new ResponseMailable($correo));
+        Mail::to($email)->send(new ResponseMailable($correo));  
 //        try {
 //            Mail::send(['html' => 'notifications.page.client-form-design'], ['nombre' => $nombre], function ($messaje) use ($email, $nombre) {
 //                $messaje->to($email, $nombre)
