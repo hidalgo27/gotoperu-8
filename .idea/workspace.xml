@@ -20,20 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e5ca6f8-a237-4dd8-bb53-0e380d037528" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/Form/FormpageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/Form/FormpageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Page/HomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/luxury.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/luxury.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/packages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/packages.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/tours.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/tours.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +185,7 @@
       <workItem from="1606487247191" duration="37000" />
       <workItem from="1606487333555" duration="262000" />
       <workItem from="1606569831165" duration="12529000" />
-      <workItem from="1606739750831" duration="12677000" />
+      <workItem from="1606739750831" duration="12943000" />
     </task>
     <servers />
   </component>
