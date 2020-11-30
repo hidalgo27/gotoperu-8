@@ -121,16 +121,11 @@
                     </div>
                     <span slot="footer" class="dialog-footer">
                     <el-button @click="ruleForm.dialogVisible = false">Cancel</el-button>
-                    <el-button type="submit" @click="submitForm('ruleForm')">
-                        <span v-show="ruleForm.loadingsend">Enviar</span> <i class="el-icon-loading" v-show="ruleForm.loadingdesign"></i>
+                    <el-button type="primary" @click="submitForm('ruleForm')">
+                        Enviar
                     </el-button>
-                         <el-button @click="resetForm('ruleForm')">Reset</el-button>
+<!--                         <el-button @click="resetForm('ruleForm')">Reset</el-button>-->
                     </span>
-                    <el-button
-                        type="primary"
-                        @click="openFullScreen2">
-                        Como servicio
-                    </el-button>
                 </el-dialog>
             </div>
         </el-form>
@@ -160,8 +155,6 @@ export default {
                 plan: '',
                 date: '',
                 commend: '',
-                loadingdesign: false,
-                loadingsend: true,
                 dialogVisible: false,
                 pickerOptions: {
                     disabledDate(time) {
@@ -235,8 +228,6 @@ export default {
 
                     };
                     const self = this;
-                    this.ruleForm.loadingdesign = true;
-                    this.ruleForm.loadingsend = false;
 
                     this.ruleForm.dialogVisible = false;
 
@@ -249,8 +240,6 @@ export default {
 
                     axios.post('/formulario-diseno', obj)
                         .then((res) =>{
-                            this.ruleForm.loadingdesign = false;
-                            this.ruleForm.loadingsend = true;
                             loading.close();
 
                             this.$alert('Uno de nuestros asesores se contactara con usted', 'Su correo fue enviado Correctamente', {
@@ -262,10 +251,9 @@ export default {
                                         type: 'success',
                                         message: `Gracias`
                                     });
-                                    this.$refs[formName].resetFields();
                                 }
-                            })
-
+                            });
+                            this.$refs[formName].resetFields();
                         })
                 } else {
                     console.log('error submit!!');

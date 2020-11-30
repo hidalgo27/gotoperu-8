@@ -100,6 +100,7 @@ class FormpageController extends Controller
             $comentario = $request->el_textarea;
         }
 
+
         $correo = new \stdClass();
 
         $correo->destinations = $destination_all;
@@ -113,7 +114,7 @@ class FormpageController extends Controller
         $correo->plan = $plan;
         $correo->comment = $comentario;
         try {
-            Mail::to('hidalgochponce@gmail.com')->send(new DesignMailable($correo));
+            Mail::to('info@gotoperu.com')->send(new DesignMailable($correo));
             Mail::to($email)->send(new ResponseMailable($correo));
 
 //            Mail::send(['html' => 'notifications.page.client-form-design'], ['nombre' => $nombre], function ($messaje) use ($email, $nombre) {
