@@ -215,7 +215,6 @@ export default {
 
 
         submitForm(formName){
-
             this.$refs[formName].validate((valid) => {
                 if (valid) {
                     // alert('submit!');
@@ -263,9 +262,10 @@ export default {
                                         type: 'success',
                                         message: `Gracias`
                                     });
+                                    this.$refs[formName].resetFields();
                                 }
                             })
-                            
+
                         })
                 } else {
                     console.log('error submit!!');
