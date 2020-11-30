@@ -126,6 +126,11 @@
                     </el-button>
                          <el-button @click="resetForm('ruleForm')">Reset</el-button>
                     </span>
+                    <el-button
+                        type="primary"
+                        @click="openFullScreen2">
+                        Como servicio
+                    </el-button>
                 </el-dialog>
             </div>
         </el-form>
@@ -167,7 +172,8 @@ export default {
                 destinations: [],
                 categories: [],
 
-                // fullscreenLoading: true,
+                fullscreenLoading: false,
+
             },
             rules: {
                 name: [
@@ -207,19 +213,9 @@ export default {
                 .catch(_ => {});
         },
 
-        // openFullScreen2() {
-        //     const loading = this.$loading({
-        //         lock: true,
-        //         text: 'Loading',
-        //         spinner: 'el-icon-loading',
-        //         background: 'rgba(0, 0, 0, 0.7)'
-        //     });
-        //     setTimeout(() => {
-        //         loading.close();
-        //     }, 2000);
-        // },
 
         submitForm(formName){
+
             this.$refs[formName].validate((valid) => {
                 if (valid) {
                     // alert('submit!');
@@ -239,40 +235,37 @@ export default {
                         tap_form_show: this.ruleForm.tap_form_show,
 
                     };
-                    console.log(obj);
                     const self = this;
                     this.ruleForm.loadingdesign = true;
                     this.ruleForm.loadingsend = false;
-                    // this.btnviewdesign = false;
-                    // this.tap_form_show = false;
-                    // this.formshow = true;
+
+                    this.ruleForm.dialogVisible = false;
+
+                    const loading = this.$loading({
+                        lock: true,
+                        text: 'Loading',
+                        spinner: 'el-icon-loading',
+                        background: 'rgba(0, 0, 0, 0.7)'
+                    });
+
                     axios.post('/formulario-diseno', obj)
                         .then((res) =>{
-                            this.ruleForm.dialogVisible = false;
                             this.ruleForm.loadingdesign = false;
                             this.ruleForm.loadingsend = true;
-                            // const datoServidor = res.data;
-                            // this.datos.push(datoServidor);
-                            // console.log(datoServidor);
-                            // this.$forceUpdate();
-                            // console.log(this.categoriasSeleccionadosForm);
+                            loading.close();
 
-                            this.$confirm('This will permanently delete the file. Continue?', 'Warning', {
+                            this.$alert('Uno de nuestros asesores se contactara con usted', 'Su correo fue enviado Correctamente', {
                                 confirmButtonText: 'OK',
                                 type: 'success',
-                                center: true
-                            }).then(() => {
-                                this.$message({
-                                    type: 'success',
-                                    message: 'Gracias'
-                                });
-                                this.$refs[formName].resetFields();
-                            }).catch(() => {
-                                this.$message({
-                                    type: 'info',
-                                    message: 'Delete canceled'
-                                });
-                            });
+                                center: true,
+                                callback: action => {
+                                    this.$message({
+                                        type: 'success',
+                                        message: `Gracias`
+                                    });
+                                }
+                            })
+                            
                         })
                 } else {
                     console.log('error submit!!');
