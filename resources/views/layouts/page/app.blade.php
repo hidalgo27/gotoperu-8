@@ -41,237 +41,169 @@
 
 
     <footer class="position-relative">
-        <div class="bg-secondary d-block w-100">
+        <div class="bg-dark d-block w-100">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="row pt-4">
-                        <div class="col-6 col-sm mb-3 text-white">
-                            <p class="small text-g-yellow font-weight-bold">GENERAL</p>
-                            <ul class="m-0 text-g-yellow list-unstyled">
-                                <li><a href="/" class="text-light font-weight-semi-bold small">Home</a></li>
-{{--                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>--}}
-                                <li><a href="{{route('contact_path')}}" class="text-light font-weight-semi-bold small">Contact Us</a></li>
-                            </ul>
-                        </div>
 
-                        <div class="col-6 col-sm mb-3 text-white">
-                            <p class="small text-g-yellow font-weight-bold">About Us</p>
-                            <ul class="m-0 list-unstyled">
-                                <li><a href="{{route('about_path')}}" class="text-light font-weight-semi-bold small">Our History</a></li>
-                                <li><a href="{{route('social_path')}}" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
-                                <li><a href="https://www.google.com/maps/place/GOTOPERU/@-13.5226792,-71.9748372,15z/data=!4m2!3m1!1s0x0:0xad9b34583ce776a0?sa=X&ved=2ahUKEwjZ86PazerjAhXuuFkKHb1dAaAQ_BIwE3oECAoQCA" target="_blank" class="text-light font-weight-semi-bold small">Offices</a></li>
-{{--                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>--}}
-                                <li><a href="#" class="text-light font-weight-semi-bold small" data-toggle="modal" data-target="#certificates">Certificates</a></li>
-                            </ul>
-                        </div>
 
-                        <div class="col-6 col-sm mb-3 text-white">
-                            <p class="small text-g-yellow font-weight-bold">Resources</p>
-                            <ul class="m-0 list-unstyled">
-{{--                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>--}}
-{{--                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>--}}
-                                <li><a href="{{route('destination_path')}}" class="text-light font-weight-semi-bold small">Destinations</a></li>
-                                <li><a href="{{route('faq_path')}}" class="text-light font-weight-semi-bold small">FAQ</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-6 col-sm mb-3 text-white">
-                            <p class="small text-g-yellow font-weight-bold">Community</p>
-                            <ul class="m-0 text-g-yellow list-unstyled">
-{{--                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>--}}
-                                <li><a href="{{route('review_path')}}" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
-{{--                                <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>--}}
-                                <li><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html" class="text-light font-weight-semi-bold small" target="_blank">Tripadvisor</a></li>
-                                <li><a href="https://www.trustpilot.com/review/gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Trustpilot</a></li>
-                                <li><a href="https://www.yelp.com/biz/gotoperu-washington?osq=gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Yelp</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-6 col-sm mb-3 text-white">
-                            <p class="small text-g-yellow font-weight-bold">Travel Agents</p>
-                            <div class="rgba-black-5 p-4">
-                                <p class="small text-light">As an agent of change, you have the power to change the world.</p>
-                                <a href="{{route('contact_path')}}" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
-                            </div>
-                        </div>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="certificates" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-body">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
-                                                <img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="w-100">
-                                                {{--<div class="modal fade" id="certificate-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
-                                                {{--<div class="modal-content">--}}
-                                                {{--<div class="modal-body p-0">--}}
-                                                {{--<img src="{{asset('images/certificates/certificate-1.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
-                                                <img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="w-100">
-                                                {{--<div class="modal fade" id="certificate-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
-                                                {{--<div class="modal-content">--}}
-                                                {{--<div class="modal-body p-0">--}}
-                                                {{--<img src="{{asset('images/certificates/certificate-2.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                            </div>
-                                            <div class="col-12 col-sm-12 col-md-4 mb-2">
-                                                <img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="w-100">
-                                                {{--<div class="modal fade" id="certificate-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
-                                                {{--<div class="modal-dialog modal-lg" role="document">--}}
-                                                {{--<div class="modal-content">--}}
-                                                {{--<div class="modal-body p-0">--}}
-                                                {{--<img src="{{asset('images/certificates/certificate-3.jpg')}}" alt="certificate gotoperu" class="img-fluid rounded">--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
-                                                {{--</div>--}}
+                    <div class="row py-5">
+                        <div class="col">
+                            <div class="position-relative text-center">
+                                <div class="row justify-content-center">
+                                    <div class="col-4">
+                                        <div class="p-4">
+                                            <div class="row">
+                                                <div class="col text-center">
+                                                    <img src="https://gotoperu-com.s3-us-west-1.amazonaws.com/logos/logo-gotoperu-white.png" alt="logo gotoperu" class="w-100">
+                                                    <p class="small font-weight-bold text-secondary pt-3 m-0">Offices.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
 
                     </div>
 
+                    <div class="row py-5">
+
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>
+                        </div>
+                        <div class="col">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>
+                        </div>
+
+
+                    </div>
+                <div class="row py-5">
+                    <div class="col-6 col-sm mb-3 text-white">
+                        <p class="small text-g-yellow font-weight-bold">GENERAL</p>
+                        <ul class="m-0 text-g-yellow list-unstyled">
+                            <li><a href="/" class="text-light font-weight-semi-bold small">Home</a></li>
+                            {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>--}}
+                            <li><a href="{{route('contact_path')}}" class="text-light font-weight-semi-bold small">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm mb-3 text-white">
+                        <p class="small text-g-yellow font-weight-bold">About Us</p>
+                        <ul class="m-0 list-unstyled">
+                            <li><a href="{{route('about_path')}}" class="text-light font-weight-semi-bold small">Our History</a></li>
+                            <li><a href="{{route('social_path')}}" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
+                            <li><a href="https://www.google.com/maps/place/GOTOPERU/@-13.5226792,-71.9748372,15z/data=!4m2!3m1!1s0x0:0xad9b34583ce776a0?sa=X&ved=2ahUKEwjZ86PazerjAhXuuFkKHb1dAaAQ_BIwE3oECAoQCA" target="_blank" class="text-light font-weight-semi-bold small">Offices</a></li>
+                            {{--                                <li><a href="https://www.gotoperu.com/join-our-team" class="text-light font-weight-semi-bold small">Join Our Team</a></li>--}}
+                            <li><a href="#" class="text-light font-weight-semi-bold small" data-toggle="modal" data-target="#certificates">Certificates</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm mb-3 text-white">
+                        <p class="small text-g-yellow font-weight-bold">Resources</p>
+                        <ul class="m-0 list-unstyled">
+                            {{--                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>--}}
+                            {{--                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>--}}
+                            <li><a href="{{route('destination_path')}}" class="text-light font-weight-semi-bold small">Destinations</a></li>
+                            <li><a href="{{route('faq_path')}}" class="text-light font-weight-semi-bold small">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm mb-3 text-white">
+                        <p class="small text-g-yellow font-weight-bold">Community</p>
+                        <ul class="m-0 text-g-yellow list-unstyled">
+                            {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>--}}
+                            <li><a href="{{route('review_path')}}" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
+                            {{--                                <li><a href="https://www.gotoperu.com/testimonials" class="text-light font-weight-semi-bold small">Reviews</a></li>--}}
+                            <li><a href="https://www.tripadvisor.com.pe/Attraction_Review-g294314-d15202262-Reviews-Gotoperu-Cusco_Cusco_Region.html" class="text-light font-weight-semi-bold small" target="_blank">Tripadvisor</a></li>
+                            <li><a href="https://www.trustpilot.com/review/gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Trustpilot</a></li>
+                            <li><a href="https://www.yelp.com/biz/gotoperu-washington?osq=gotoperu.com" class="text-light font-weight-semi-bold small" target="_blank">Yelp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-sm mb-3 text-white">
+                        <p class="small text-g-yellow font-weight-bold">Travel Agents</p>
+                        <div class="rgba-black-5 p-4">
+                            <p class="small text-light">As an agent of change, you have the power to change the world.</p>
+                            <a href="{{route('contact_path')}}" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+
+        <div class="alert-g-yellow p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="position-relative text-center">
+                            {{--                        <small class="footer-title text-uppercase text-muted small">CONNECT</small>--}}
+                            {{--                        <span class="footer-line-title"></span>--}}
+                            <div class="row justify-content-center">
+                                <div class="col-9">
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <i data-feather="facebook" class="" stroke-width="1"></i>
+                                            <small class="t-small-6">FACEBOOK</small>
+                                        </div>
+                                        <div class="col">
+                                            <i data-feather="twitter" class="" stroke-width="1"></i>
+                                            <small class="t-small-6">TWITTER</small>
+                                        </div>
+                                        <div class="col">
+                                            <i data-feather="instagram" class="" stroke-width="1"></i>
+                                            <small class="t-small-6">INSTAGRAM</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="position-relative text-center">
+                            {{--                        <small class="footer-title text-uppercase text-muted small">NEWSLETTER</small>--}}
+                            {{--                        <span class="footer-line-title"></span>--}}
+                            <div class="row justify-content-center">
+                                <div class="col">
+
+                                    <input type="text" class="form-control form-control-sm rounded-0 d-block text-center t-corrido" placeholder="email">
+
+
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-dark rounded-0 btn-sm btn-block"><span class="small">SUSCRIBE</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <section class="bg-light">
             <div class="container-fluid">
-                {{--            <div class="row mb-3">--}}
-                {{--                <div class="col text-center">--}}
-                {{--                    <h2 class="h1 font-weight-bold text-g-dark">Peru Authentic Experiences</h2>--}}
-                {{--                    <a href="{{route('')}}" class="font-weight-bold">@lang('home.see_our_publications')</a>--}}
-                {{--                </div>--}}
-                {{--            </div>--}}
-                <div class="row">
-                    <div class="col">
-                        {{--<h6 class="text-secondary"><strong><a href=""><i class="fab fa-instagram"></i></a> #gotoperu check out these #gotoperu photos from past travelers. After your trip, come back and share some of your owm!</strong></h6>--}}
-                        {{--<h2 class="text-g-green">GREAT ADVENTURE <strong>PACKAGES</strong> FOR EVERYONE WITH GOTOPERU</h2>--}}
-                        {{--<h2 class="text-g-green h3 font-weight-light">THE BEST <strong>PERU VACATIONS</strong> AND <strong>MACHU PICCHU TOURS</strong></h2>--}}
-                        {{--<p class=" font-weight-light">You are already in the "neighborhood" here are some possible multi countries travel programs for your review, rest assure we can fully customize any travel lenght and any combination of countries, we can even design a comprehensive 30 days South America escape.</p>--}}
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col p-0">
                         <div class="elfsight-app-ba7c9526-9468-4d5b-b378-68ec76259e00"></div>
-
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <div class="container my-4">
-            <div class="row">
-                <div class="col">
-                    <div class="position-relative text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-4">
-                                <div class="p-4">
-                                    <div class="row">
-                                        <div class="col text-center">
-                                            <img src="{{asset('images/logos/logo-gotoperu-black.png')}}" alt="" class="w-100">
-                                            <p class="small font-weight-bold text-secondary pt-3 m-0">Offices.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
-
-            <div class="row">
-
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>
-                </div>
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>
-                </div>
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>
-                </div>
-                <div class="col">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>
-                </div>
-
-
-            </div>
-
-        </div>
-        <div class="alert-g-yellow mt-5 p-3">
-            <div class="container">
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="position-relative text-center">
-                                    {{--                        <small class="footer-title text-uppercase text-muted small">CONNECT</small>--}}
-                                    {{--                        <span class="footer-line-title"></span>--}}
-                                    <div class="row justify-content-center">
-                                        <div class="col-9">
-
-                                            <div class="row">
-                                                <div class="col">
-                                                    <i data-feather="facebook" class="" stroke-width="1"></i>
-                                                    <small class="t-small-6">FACEBOOK</small>
-                                                </div>
-                                                <div class="col">
-                                                    <i data-feather="twitter" class="" stroke-width="1"></i>
-                                                    <small class="t-small-6">TWITTER</small>
-                                                </div>
-                                                <div class="col">
-                                                    <i data-feather="instagram" class="" stroke-width="1"></i>
-                                                    <small class="t-small-6">INSTAGRAM</small>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="position-relative text-center">
-                                    {{--                        <small class="footer-title text-uppercase text-muted small">NEWSLETTER</small>--}}
-                                    {{--                        <span class="footer-line-title"></span>--}}
-                                    <div class="row justify-content-center">
-                                        <div class="col">
-
-                                            <input type="text" class="form-control form-control-sm rounded-0 d-block text-center t-corrido" placeholder="email">
-
-
-                                        </div>
-                                        <div class="col">
-                                            <button type="submit" class="btn btn-dark rounded-0 btn-sm btn-block"><span class="small">SUSCRIBE</span></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-            </div>
-        </div>
         <div class="d-block bg-dark">
             <div class="container">
                 <div class="row">

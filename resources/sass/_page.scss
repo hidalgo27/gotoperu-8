@@ -1,22 +1,33 @@
-.header {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-    background-image: url("http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/AV704-1_1574181883.jpg");
-    background-size: 100%;
-}
-header.header .overlay {
+//.header {
+//    position: relative;
+//    background-color: black;
+//    height: 100vh;
+//    min-height: 25rem;
+//    width: 100%;
+//    overflow: hidden;
+//    background-image: url("http://gotoperu-mx.s3-us-west-1.amazonaws.com/package/slider/AV704-1_1574181883.jpg");
+//    background-size: 100%;
+//}
+//header.header .overlay {
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    height: 100%;
+//    width: 100%;
+//    //background-color: black;
+//    //  opacity: 0.18;
+//    //z-index: 1;
+//}
+.new-top-video:before{
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    background-color: black;
+    opacity: 0.18;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
-    //background-color: black;
-    //  opacity: 0.18;
-    //z-index: 1;
+    z-index: 1;
 }
 .position-absolute-bottom-sticker-1 {
     position: absolute;
@@ -214,12 +225,12 @@ i.icono {
 }
 
 .rgba-black-gradient-bottom{
-    background: -moz-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.55) 100%);
-    background: -webkit-gradient(linear,left bottom,left bottom,color-stop(0,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,.55)));
-    background: -webkit-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.55) 100%);
-    background: -o-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.55) 100%);
-    background: -ms-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.55) 100%);
-    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.55) 100%);
+    background: -moz-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+    background: -webkit-gradient(linear,left bottom,left bottom,color-stop(0,rgba(0,0,0,0)),color-stop(100%,rgba(0,0,0,.9)));
+    background: -webkit-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+    background: -o-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+    background: -ms-linear-gradient(bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.9) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='a6000000',GradientType=0);
     background-repeat: repeat-x;
 }

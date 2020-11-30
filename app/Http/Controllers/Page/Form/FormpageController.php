@@ -100,9 +100,6 @@ class FormpageController extends Controller
             $comentario = $request->el_textarea;
         }
 
-
-
-
         $correo = new \stdClass();
 
         $correo->destinations = $destination_all;
@@ -115,9 +112,10 @@ class FormpageController extends Controller
         $correo->date = $fecha;
         $correo->plan = $plan;
         $correo->comment = $comentario;
-        Mail::to('hidalgochponce@gmail.com')->send(new DesignMailable($correo));
-        Mail::to($email)->send(new ResponseMailable($correo));  
-//        try {
+        try {
+            Mail::to('hidalgochponce@gmail.com')->send(new DesignMailable($correo));
+            Mail::to($email)->send(new ResponseMailable($correo));
+
 //            Mail::send(['html' => 'notifications.page.client-form-design'], ['nombre' => $nombre], function ($messaje) use ($email, $nombre) {
 //                $messaje->to($email, $nombre)
 //                    ->subject('Incas Peru Tours')
@@ -145,10 +143,10 @@ class FormpageController extends Controller
 //            });
 //
 //            return 'Thank you.';
-//        }
-//        catch (Exception $e){
-//            return $e;
-//        }
+        }
+        catch (Exception $e){
+            return $e;
+        }
 
     }
 

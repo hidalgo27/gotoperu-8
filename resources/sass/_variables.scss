@@ -12,7 +12,7 @@ $font-weight-base: 300;
 // Colors
 $blue: #3490dc;
 $indigo: #6574cd;
-$purple: #9561e2;
+$e-purple: #9561e2e3;
 $pink: #f66d9b;
 $red: #e3342f;
 $orange: #f6993f;
@@ -21,7 +21,7 @@ $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
 $primary: #007bff;
-$info: #00b4e9;
+$info: #00b4e9e3;
 
 $font-weight-semi-bold:          600 !default;
 .font-weight-semi-bold  { font-weight: $font-weight-semi-bold !important; }
@@ -31,6 +31,15 @@ $g-yellow:   #f9a825 !default;
 $g-dark:   #333333 !default;
 $g-dark-light: #969696 !default;
 $g-lime: #a9d80f !default;
+$g-orange: #d05903 !default;
+
+$e-green:    #7F8429e3 !default;
+$e-yellow:   #f9a825e3 !default;
+$e-dark:   #333333e3 !default;
+$e-dark-light: #969696e3 !default;
+$e-lime: #a9d80fe3 !default;
+$e-cream: #f1f4e1e0 !default;
+$e-orange: #d05903e3 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -39,6 +48,17 @@ $theme-colors: map-merge((
     "g-dark": $g-dark,
     "g-dark-light": $g-dark-light,
     "g-lime": $g-lime,
+    "g-orange": $g-orange,
+
+    "e-green": $e-green,
+    "e-yellow": $e-yellow,
+    "e-dark": $e-dark,
+    "e-dark-light": $e-dark-light,
+    "e-lime": $e-lime,
+    "e-purple": $e-purple,
+    "e-cream": $e-cream,
+    "e-orange": $e-orange,
+
 ), $theme-colors);
 
 $sizes: () !default;

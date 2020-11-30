@@ -222,9 +222,20 @@ class HomepageController extends Controller
     }
 
     public function packages(){
-        $destino = TDestino::where('estado', 0)->get();
-        $destino_menu = TDestino::all();
-        return view('page.packages',compact('destino','destino_menu'));
+
+        $paquete = TPaquete::with('paquetes_destinos.destinos','paquetes_categoria.categoria', 'precio_paquetes')->where('is_paquete', 1)->get()->sortBy('duracion');
+
+        $paquete_destinos = TPaqueteDestino::with('destinos')->get();
+        $categoria = TCategoria::where('estado', 1)->get();
+        $destino = TDestino::where('estado', 1)->get();
+
+        return view('page.packages',
+            compact(
+                'paquete',
+                'categoria',
+                'destino',
+                'paquete_destinos'
+            ));
     }
 
     public function destination(){

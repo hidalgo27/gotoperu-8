@@ -1,4 +1,4 @@
-<div class="rgba-white-9 menu-container">
+<div class="rgba-white-9">
     <div class="container-fluid rgba-white-8">
         <div class="row justify-content-between align-items-center d-none d-sm-flex">
             <div class="col-auto py-3">

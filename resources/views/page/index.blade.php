@@ -1,21 +1,24 @@
 @extends('layouts.page.app')
 @section('content')
-    @include('layouts.page.head')
-    <header class="header position-relative">
-        <div class="overlay"></div>
-
-        <div class="homepage-video">
-            {{--            <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
-{{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
-        </div>
-        <div class="container h-100">
+    @include('layouts.page.head-home')
+    <header class="new-top-video">
+        <video autoplay muted loop poster="https://gotoperu-20.s3-us-west-1.amazonaws.com/placebg.jpg">
+            <source src="https://gotoperu-com.s3-us-west-1.amazonaws.com/video/escenas.mp4" type="video/mp4">
+        </video>
+        <div class="container z-index-2 h-100">
             <div class="row d-flex h-75 text-center align-items-end">
                 <div class="col w-100 text-white">
-                    <h1 class="h1 font-weight-bold text-g-lime">Peru small groups and private tours</h1>
+                    <h1 class="h1 font-weight-bold text-g-yellow">Peru small groups and private tours</h1>
                     <h2 class="font-weight-lighter h4">Unique experiences and connections like no other.</h2>
                 </div>
             </div>
         </div>
+
+{{--        <div class="homepage-video">--}}
+{{--                        <iframe src="https://player.vimeo.com/video/361847703?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+{{--            <iframe src="https://player.vimeo.com/video/381676880?background=1&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"  frameborder="0" allow="autoplay; fullscreen"></iframe>--}}
+{{--        </div>--}}
+
 {{--        <pop-form></pop-form>--}}
 
 {{--        <div class="position-absolute-top l-0 w-25">--}}
@@ -373,18 +376,66 @@
 
     <section class="bg-light py-5">
         <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-7">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 d-flex">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/mapi')}}" alt=""></a>
-                                    <div class="position-absolute-bottom w-40 l-0 rgba-black-gradient-top h-100 p-4">
+                                    <div class="position-absolute-bottom w-40 l-0 bg-e-yellow h-100 p-4">
+                                        <h4 class="text-white font-weight-bold">MachuPicchu & Rainbow Mountain</h4>
+                                        <p class="text-white small">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">6 Days</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
+                                                {{--                                                    <span class="text-g-yellow small font-weight-bold">Inquire</span>--}}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 d-flex mb-3">
+                            <div class="w-100 shadow-sm">
+                                <div class="header-img-packages bx-img-destinohome position-relative">
+                                    <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
+                                    <div class="position-absolute-bottom bg-e-green p-4">
 
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <p class="font-weight-bold text-white h6 pr-2 m-0">51 Days</p>
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">5 Days</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
+                                                {{--                                                    <span class="text-g-yellow small font-weight-bold">Inquire</span>--}}
+
+                                            </div>
+                                        </div>
+                                        <h5 class="text-white h6 font-weight-bold m-0">Paquete !</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 d-flex">
+                            <div class="w-100 shadow-sm">
+                                <div class="header-img-packages bx-img-destinohome position-relative">
+                                    <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
+                                    <div class="position-absolute-bottom bg-e-dark p-4">
+
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">5 Days</p>
                                             </div>
                                             <div class="col-auto">
                                                 <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
@@ -400,13 +451,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 d-flex mb-3">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
-                                    <div class="position-absolute-bottom w-40 h-100 rgba-black-gradient-top p-4">
+                                    <div class="position-absolute-bottom bg-e-cream p-4">
+
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold h6 pr-2 m-0">5 Days</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold small m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
+                                                {{--                                                    <span class="text-g-yellow small font-weight-bold">Inquire</span>--}}
+
+                                            </div>
+                                        </div>
+                                        <h5 class="h6 font-weight-bold m-0">Paquete !</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 d-flex">
+                            <div class="w-100 shadow-sm">
+                                <div class="header-img-packages bx-img-destinohome position-relative">
+                                    <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
+                                    <div class="position-absolute-bottom bg-e-dark-light p-4">
 
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
@@ -424,15 +499,21 @@
 
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 d-flex">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
-                                    <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
-                                    <div class="position-absolute-bottom rgba-black-gradient-bottom p-4">
+                                    <a href=""><img class="w-100" src="{{asset('images/mapi')}}" alt=""></a>
+                                    <div class="position-absolute-bottom w-40 l-0 bg-e-orange h-100 p-4">
 
+                                        <h4 class="text-white font-weight-bold">MachuPicchu Full Day Tour by Expedition</h4>
+                                        <p class="text-white small">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <p class="font-weight-bold text-white h6 pr-2 m-0">5 Days</p>
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">51 Days</p>
                                             </div>
                                             <div class="col-auto">
                                                 <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
@@ -440,7 +521,6 @@
 
                                             </div>
                                         </div>
-                                        <h5 class="text-white h6 font-weight-bold m-0">Paquete !</h5>
                                     </div>
                                 </div>
 
@@ -560,7 +640,7 @@
 
             <div class="row">
                 <div class="col text-center">
-                    <a :href="'#consulte'" class="btn btn-outline btn-outline-dark font-weight-bold">View more</a>
+                    <a :href="'#consulte'" class="btn btn-outline btn-outline-dark font-weight-bold">View all packages</a>
                 </div>
             </div>
         </div>
@@ -576,13 +656,11 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid p-0">
+        <div class="container-fluid">
             <div class="row no-gutters align-items-center">
 
-
-
                     @foreach($destino->take(6) as $destinos)
-                    <div class="col-4">
+                    <div class="col-4 p-2">
 
 {{--                            <div class="position-relative bx-img-destinohome">--}}
 {{--                                <a href="" class="text-dark d-block">--}}
@@ -647,48 +725,48 @@
         </div>
     </section>
 
-    <section class="bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center">
-                    <h2 class="font-weight-semi-bold h3">Testimonials</h2>
+{{--    <section class="bg-light py-5">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col text-center">--}}
+{{--                    <h2 class="font-weight-semi-bold h3">Testimonials</h2>--}}
 {{--                    <p class="font-weight-light m-0">from the Coast , to the Andes and to the Rainforest! Go with the peruvian experts, GO with GOTOPERU:</p>--}}
-                </div>
-            </div>
-            <div class="row slider-video-testimonio mt-4">
-                @foreach($testimonio_video as $testimonio_videos)
-                    <div class="col">
-                        <a class="venobox" data-autoplay="true" data-vbtype="video" href="{{$testimonio_videos->codigo}}">
-                            <div class="position-relative">
-                                {{--<img src="{{asset('images/video-tertimonio/'.$testimonio_videos->imagen.'')}}" alt="" class="w-100 shadow-sm rounded">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row slider-video-testimonio mt-4">--}}
+{{--                @foreach($testimonio_video as $testimonio_videos)--}}
+{{--                    <div class="col">--}}
+{{--                        <a class="venobox" data-autoplay="true" data-vbtype="video" href="{{$testimonio_videos->codigo}}">--}}
+{{--                            <div class="position-relative">--}}
+{{--                                --}}{{--<img src="{{asset('images/video-tertimonio/'.$testimonio_videos->imagen.'')}}" alt="" class="w-100 shadow-sm rounded">--}}
 
-                                {{--                                    <picture>--}}
-                                {{--                                        <source type="image/webp"--}}
-                                {{--                                                data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
-                                {{--                                                data-sizes="100w">--}}
-                                {{--                                        <img alt="gotoperu" class="lazy w-100 shadow-sm rounded"--}}
-                                {{--                                             data-src="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
-                                {{--                                             data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
-                                {{--                                             data-sizes="100w">--}}
-                                {{--                                    </picture>--}}
+{{--                                --}}{{--                                    <picture>--}}
+{{--                                --}}{{--                                        <source type="image/webp"--}}
+{{--                                --}}{{--                                                data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+{{--                                --}}{{--                                                data-sizes="100w">--}}
+{{--                                --}}{{--                                        <img alt="gotoperu" class="lazy w-100 shadow-sm rounded"--}}
+{{--                                --}}{{--                                             data-src="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+{{--                                --}}{{--                                             data-srcset="{{asset('images/video-testimonio/'.$testimonio_videos->imagen.'')}}"--}}
+{{--                                --}}{{--                                             data-sizes="100w">--}}
+{{--                                --}}{{--                                    </picture>--}}
 
-                                <img src="{{$testimonio_videos->imagen}}" alt="" class="w-100 shadow-sm rounded">
+{{--                                <img src="{{$testimonio_videos->imagen}}" alt="" class="w-100 shadow-sm rounded">--}}
 
-                                <div class="position-absolute-bottom text-white p-3 icon-play">
-                                    <i class="fas fa-play fa-2x"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                @endforeach
-            </div>
-            <div class="row mt-5">
-                <div class="col text-center">
-                    <a href="{{route('review_path')}}" class="btn btn-primary font-weight-bold">View all testimonials</a>
-                </div>
-            </div>
-        </div>
-    </section>
+{{--                                <div class="position-absolute-bottom text-white p-3 icon-play">--}}
+{{--                                    <i class="fas fa-play fa-2x"></i>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                @endforeach--}}
+{{--            </div>--}}
+{{--            <div class="row mt-5">--}}
+{{--                <div class="col text-center">--}}
+{{--                    <a href="{{route('review_path')}}" class="btn btn-primary font-weight-bold">View all testimonials</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 
     <section class="position-relative">
         <div class="offer py-5">
