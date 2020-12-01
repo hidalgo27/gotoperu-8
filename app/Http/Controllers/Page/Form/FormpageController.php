@@ -60,6 +60,11 @@ class FormpageController extends Controller
             }
         }
 
+        $title = '';
+        if ($request->el_titulo){
+            $title = $request->el_titulo;
+        }
+
         $travellers_all = '';
         if ($request->el_pasajeros){
             $travellers_all = $request->el_pasajeros;
@@ -103,6 +108,7 @@ class FormpageController extends Controller
 
         $correo = new \stdClass();
 
+        $correo->title = $title;
         $correo->destinations = $destination_all;
         $correo->category = $category_all;
         $correo->travellers = $travellers_all;
@@ -114,42 +120,13 @@ class FormpageController extends Controller
         $correo->plan = $plan;
         $correo->comment = $comentario;
         try {
-            Mail::to('info@gotoperu.com')->send(new DesignMailable($correo));
+            Mail::to('hidalgochponce@gmail.com')->send(new DesignMailable($correo));
             Mail::to($email)->send(new ResponseMailable($correo));
-
-//            Mail::send(['html' => 'notifications.page.client-form-design'], ['nombre' => $nombre], function ($messaje) use ($email, $nombre) {
-//                $messaje->to($email, $nombre)
-//                    ->subject('Incas Peru Tours')
-//                    /*->attach('ruta')*/
-//                    ->from('info@incasperutours.travel', 'Incas Peru Tours');
-//            });
-//            Mail::send(['html' => 'notifications.page.admin-form-contact'], [
-//                'category_all' => $category_all,
-//                'destination_all' => $destination_all,
-//                'travellers_all' => $travellers_all,
-//                'duration_all' => $duration_all,
-//
-//                'nombre' => $nombre,
-//                'email' => $email,
-//                'fecha' => $fecha,
-//                'telefono' => $telefono,
-//                'comentario' => $comentario,
-//
-//            ], function ($messaje) use ($from) {
-//                $messaje->to($from, 'Incas Peru Tours')
-//                    ->subject('Incas Peru Tours')
-////                    ->cc($from2, 'GotoPeru')
-//                    /*->attach('ruta')*/
-//                    ->from('info@incasperutours.travel', 'Incas Peru Tours');
-//            });
-//
-//            return 'Thank you.';
+            return 'Thank you.';
         }
         catch (Exception $e){
             return $e;
         }
-
     }
-
 
 }

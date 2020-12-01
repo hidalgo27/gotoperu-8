@@ -23,6 +23,7 @@
                     <font style="vertical-align:inherit">
                         <font style="vertical-align:inherit">
                             <font style="vertical-align:inherit">
+                                <p><strong>Package:</strong> {{$design->title}}</p>
                                 <p><strong>Name:</strong> {{$design->name}}</p>
                                 <p><strong>Email:</strong> {{$design->email}}</p>
                                 <p><strong>Destinations:</strong> {{$design->destinations}}</p>

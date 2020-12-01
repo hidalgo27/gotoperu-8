@@ -14,23 +14,26 @@
                 @endforeach
 
             </div>
-
-            <pop-form></pop-form>
-
-            <div class="position-absolute-bottom l-0 w-25">
-                <a href="" class="btn btn-g-yellow btn-block btn-sm font-weight-bold text-white">BOOK NOW</a>
-                <a href="" class="btn btn-outline-light btn-block my-2 btn-sm">Download Itinerary PDF</a>
-                <div class="rgba-white-9 text-left p-3">
-                    <h1 class="h3 font-weight-bold text-g-green">{{$paquetes->titulo}}</h1>
-                    <h4 class="font-weight-semi-bold text-g-yellow">Included</h4>
-                    <div class="small included-list pl-3">
-                        {!! $paquetes->incluye !!}
+            <div class="container z-index-2 h-100">
+                <div class="row d-flex h-75 text-center align-items-end">
+                    <div class="col w-100 text-white pt-5 rounded">
+                        <h1 class="h1 font-weight-bold text-white">{{$paquetes->titulo}}</h1>
+                        <h4 class="font-weight-bold text-g-yellow">{{$paquetes->duracion}} days</h4>
+{{--                        <p class="font-weight-lighter">{!! $paquetes->descripcion !!}</p>--}}
                     </div>
                 </div>
-                <a href="" class="btn btn-g-lime btn-lg btn-block my-2">Inquire</a>
             </div>
         </header>
 
+        <section class="fixed-bottom f-2030">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <itinerary-component :paquetes-titulo="{{json_encode($paquetes->titulo)}}" :paquetes-duracion="{{$paquetes->duracion}}"></itinerary-component>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="my-4">
             <div class="container">

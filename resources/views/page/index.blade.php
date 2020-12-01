@@ -2,7 +2,7 @@
 @section('content')
     @include('layouts.page.head-home')
     <header class="new-top-video">
-        <video autoplay muted loop poster="https://gotoperu-20.s3-us-west-1.amazonaws.com/placebg.jpg">
+        <video autoplay muted loop>
             <source src="https://gotoperu-com.s3-us-west-1.amazonaws.com/video/escenas.mp4" type="video/mp4">
         </video>
         <div class="container z-index-2 h-100">
