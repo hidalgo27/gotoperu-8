@@ -19,7 +19,7 @@ mix.scripts([
     'node_modules/venobox/venobox/venobox.min.js',
     'node_modules/swiper/swiper-bundle.js',
     'node_modules/feather-icons/dist/feather.js',
-    // 'node_modules/bootstrap-dropdown-hover/dist/jquery.bootstrap-dropdown-hover.min.js',
+    'node_modules/bootstrap-dropdown-hover/dist/jquery.bootstrap-dropdown-hover.min.js',
     // 'node_modules/vue-multiselect/dist/vue-multiselect.min.js',
 ], 'public/js/plugins.js');
 // ---js web

@@ -229,12 +229,23 @@ class HomepageController extends Controller
         $categoria = TCategoria::where('estado', 1)->get();
         $destino = TDestino::where('estado', 1)->get();
 
+        $paquetes_t = TPaquete::with('precio_paquetes')->where('is_p_t', 0)->get();
+
+        $categoria = TCategoria::where('url', 'luxury')->get();
+
+        foreach ($categoria as $c_s) {
+            $categoria_luxury = TPaqueteCategoria::with('paquete', 'categoria')->where('idcategoria', $c_s->id)->get();
+        }
+
+
         return view('page.packages',
             compact(
                 'paquete',
                 'categoria',
                 'destino',
-                'paquete_destinos'
+                'paquete_destinos',
+                'paquetes_t',
+                'categoria_luxury'
             ));
     }
 

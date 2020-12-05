@@ -14,58 +14,189 @@
         </div>
     </header>
 
-    <section class="mt-5">
+    <section class="bg-white">
         <div class="container">
-            <div class="row no-gutters pb-4">
+            <div class="row py-4">
                 <div class="col">
-                    <h2 class="font-weight-bold h4">Peru travel <span class="text-g-green">packages</span></h2>
+                    <h1 class="text-g-yellow font-weight-bold text-center">Viajes a Perú <span class="text-g-green">PAQUETES DESTACADOS</span></h1>
+                    <p class="text-center m-0">Nuestros paquetes más populares <b>En Perú</b>, Estos <strong>paquetes</strong> pueden ser usados como referencia para personalizar tu viaje. En <strong>GOTOPERU</strong> Nos especializamos en la elaboración de experiencias personalizadas basadas en sus preferencias; invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo, Machu Picchu, Lake Titicaca, Nazca y el Amazonas.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                @foreach($paquete as $paquetes)
-                <div class="col-12 col-sm-12 col-md-4 d-flex p-2">
-                    <div class="w-100 shadow-sm">
-                        <div class="header-img-packages bx-img-destinohome position-relative">
-                            <a href="{{route('detail_path', $paquetes->url)}}"><img class="w-100" src="{{$paquetes->imagen}}" alt=""></a>
-                            <div class="position-absolute-bottom rgba-black-gradient-bottom p-3">
-                                <h5 class="text-white h6 font-weight-bold pb-2 m-0">{{$paquetes->titulo}}</h5>
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <p class="font-weight-bold text-white h6 pr-2 m-0">{{$paquetes->duracion}} days</p>
-                                    </div>
-                                    <div class="col-auto">
-                                        @foreach($paquetes->precio_paquetes as $precio)
-                                            @if($precio->estrellas == 3)
-                                                @if($precio->precio_d > 0)
-                                                    <p class="font-weight-bold h6 text-g-yellow m-0">
-                                                        <sup class="small">
-                                                            <small>
-{{--                                                                <del>500</del>--}}
-                                                                from
-                                                            </small>
-                                                        </sup>
-                                                        ${{$precio->precio_d}}
-                                                        <small>USD</small>
-                                                    </p>
-                                                @else
-                                                    <span class="text-danger">Consulte</span>
-                                                @endif
-                                            @endif
-                                        @endforeach
+    <section class="mb-4">
+                <div class="container sticky-top">
+                    <div class="row">
+                        <div class="col">
+                            <div id="navbar-scroll" class="list-group list-group-horizontal" id="navbar-scroll">
+                                <a class="list-group-item list-group-item-action active" href="#travel_packages">
+                                    Peru travel
+                                </a>
+                                <a class="list-group-item list-group-item-action" href="#machupicchu_tours">Machu Picchu Tours</a>
+                                <a class="list-group-item list-group-item-action" href="#luxury_travel">Luxury Travel</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+        <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <div class="container-fluid pt-5" id="travel_packages">
+                <div class="row no-gutters">
+                    <div class="col-12 pt-1 px-5">
+                        <h2 class="font-weight-bold h4">Peru travel <span class="text-g-green">packages</span></h2>
+                    </div>
+                    @foreach($paquete as $paquetes)
+                        <div class="col-12 col-sm-12 col-md-4 d-flex p-2">
+                            <div class="w-100 shadow-sm">
+                                <div class="header-img-packages bx-img-destinohome position-relative">
+                                    <a href="{{route('detail_path', $paquetes->url)}}"><img class="w-100" src="{{$paquetes->imagen}}" alt=""></a>
+                                    <div class="position-absolute-bottom rgba-black-gradient-bottom p-3">
+                                        <h5 class="text-white h6 font-weight-bold pb-2 m-0">{{$paquetes->titulo}}</h5>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">{{$paquetes->duracion}} days</p>
+                                            </div>
+                                            <div class="col-auto">
+                                                @foreach($paquetes->precio_paquetes as $precio)
+                                                    @if($precio->estrellas == 3)
+                                                        @if($precio->precio_d > 0)
+                                                            <p class="font-weight-bold h6 text-g-yellow m-0">
+                                                                <sup class="small">
+                                                                    <small>
+                                                                        {{--                                                                <del>500</del>--}}
+                                                                        from
+                                                                    </small>
+                                                                </sup>
+                                                                ${{$precio->precio_d}}
+                                                                <small>USD</small>
+                                                            </p>
+                                                        @else
+                                                            <span class="text-danger">Consulte</span>
+                                                        @endif
+                                                    @endif
+                                                @endforeach
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
                             </div>
                         </div>
+                    @endforeach
+                </div>
+            </div>
+
+            <section class="mt-5" id="machupicchu_tours">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="font-weight-bold h4">Tours <span class="text-g-green">Machu Picchu</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        @foreach($paquetes_t as $paquete)
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex p-2">
+                                <div class=" w-100">
+                                    <div class="header-img-packages bx-img-destinohome position-relative">
+                                        <a href="{{route('detail_path', $paquete->url)}}"><img class="w-100" src="{{$paquete->imagen}}" alt=""></a>
+                                        <div class="position-absolute-bottom rgba-black-gradient-bottom p-2">
+                                            <h5 class="text-white h6 font-weight-bold text-center pb-2 m-0">{{$paquete->titulo}}</h5>
+
+                                            @foreach($paquete->precio_paquetes as $precio)
+                                                @if($precio->estrellas == 2)
+                                                    @if($precio->precio_d > 0)
+                                                        <p class="font-weight-bold text-g-yellow text-center h6 pt-1 m-0">
+                                                            ${{$precio->precio_d}}
+                                                        </p>
+                                                    @else
+                                                        <span class="text-danger">inquire</span>
+                                                    @endif
+                                                @endif
+                                            @endforeach
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        @endforeach
+                    </div>
+                </div>
+
+            </section>
+            <section class="mt-5" id="luxury_travel">
+
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <h2 class="font-weight-bold h4">Luxury <span class="text-g-green">packages</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        @foreach($categoria_luxury as $category)
+
+                            @if (isset($category->categoria))
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-4 mb-4 d-flex p-2">
+                                    <div class="w-100">
+                                        <div class="header-img-packages bx-img-destinohome position-relative">
+                                            <a href="{{route('detail_path', $category->paquete->url)}}"><img class="w-100" src="{{$category->paquete->imagen}}" alt=""></a>
+                                            <div class="position-absolute-bottom rgba-black-gradient-bottom px-3 py-3">
+                                                <h5 class="text-white h6 font-weight-bold pb-2 m-0">{{$category->paquete->url}}</h5>
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-auto">
+                                                        <p class="font-weight-bold text-white h6 pr-2 m-0">{{ $category->paquete->duracion }} days</p>
+                                                    </div>
+                                                    <div class="col-auto">
+
+                                                        @foreach($category->paquete->precio_paquetes as $precio)
+                                                            @if($precio->estrellas == 2)
+                                                                @if($precio->precio_d > 0)
+                                                                    <p class="font-weight-bold small text-white m-0">
+                                                                        <sup class="small"><small>from</small></sup> ${{$precio->precio_d}}<small>USD</small>
+                                                                    </p>
+
+                                                                @else
+                                                                    <span class="text-danger font-weight-bold">inquire</span>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+
+
+
+                                                    </div>
+                                                </div>
+
+                                                {{--                                                <small class="text-white">Cusco, Machu Picchu.</small>--}}
+                                            </div>
+
+                                        </div>
+                                        <!--            <div class="card-body">-->
+
+                                        <!--                <span class="font-weight-normal text-secondary">-->
+                                        <!--                    <i class="fa fa-map-marker-alt"></i>-->
+
+                                        <!--                </span>-->
+                                        <!--            </div>-->
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
 
                     </div>
                 </div>
-                @endforeach
-            </div>
+            </section>
         </div>
 
     </section>
+
 @endsection

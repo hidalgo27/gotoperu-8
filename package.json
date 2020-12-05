@@ -24,6 +24,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "bootstrap-dropdown-hover": "^4.2.0",
         "element-ui": "^2.14.1",
         "feather-icons": "^4.28.0",
         "swiper": "^6.3.5",

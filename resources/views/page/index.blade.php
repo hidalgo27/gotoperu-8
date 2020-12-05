@@ -459,19 +459,19 @@
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
-                                    <div class="position-absolute-bottom bg-e-cream p-4">
+                                    <div class="position-absolute-bottom bg-e-green p-4">
 
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <p class="font-weight-bold h6 pr-2 m-0">5 Days</p>
+                                                <p class="font-weight-bold h6 text-white pr-2 m-0">5 Days</p>
                                             </div>
                                             <div class="col-auto">
-                                                <p class="font-weight-bold small m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
+                                                <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
                                                 {{--                                                    <span class="text-g-yellow small font-weight-bold">Inquire</span>--}}
 
                                             </div>
                                         </div>
-                                        <h5 class="h6 font-weight-bold m-0">Paquete !</h5>
+                                        <h5 class="h6 text-white font-weight-bold m-0">Paquete !</h5>
                                     </div>
                                 </div>
 
@@ -507,16 +507,16 @@
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/mapi')}}" alt=""></a>
-                                    <div class="position-absolute-bottom w-40 l-0 bg-e-orange h-100 p-4">
+                                    <div class="position-absolute-bottom w-40 l-0 bg-e-cream h-100 p-4">
 
-                                        <h4 class="text-white font-weight-bold">MachuPicchu Full Day Tour by Expedition</h4>
-                                        <p class="text-white small">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
+                                        <h4 class=" font-weight-bold">MachuPicchu Full Day Tour by Expedition</h4>
+                                        <p class=" small">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <p class="font-weight-bold text-white h6 pr-2 m-0">51 Days</p>
+                                                <p class="font-weight-bold  h6 pr-2 m-0">51 Days</p>
                                             </div>
                                             <div class="col-auto">
-                                                <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
+                                                <p class="font-weight-bold small  m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
                                                 {{--                                                    <span class="text-g-yellow small font-weight-bold">Inquire</span>--}}
 
                                             </div>
