@@ -16,7 +16,7 @@
 
     <section class="bg-white">
         <div class="container">
-            <div class="row py-4">
+            <div class="row py-5">
                 <div class="col">
                     <h1 class="text-g-yellow font-weight-bold text-center">Viajes a Perú <span class="text-g-green">PAQUETES DESTACADOS</span></h1>
                     <p class="text-center m-0">Nuestros paquetes más populares <b>En Perú</b>, Estos <strong>paquetes</strong> pueden ser usados como referencia para personalizar tu viaje. En <strong>GOTOPERU</strong> Nos especializamos en la elaboración de experiencias personalizadas basadas en sus preferencias; invitamos a revisar estos programas para tener una idea de los destinos más importantes, por ejemplo, Machu Picchu, Lake Titicaca, Nazca y el Amazonas.</p>
@@ -29,12 +29,12 @@
                 <div class="container sticky-top">
                     <div class="row">
                         <div class="col">
-                            <div id="navbar-scroll" class="list-group list-group-horizontal" id="navbar-scroll">
-                                <a class="list-group-item list-group-item-action active" href="#travel_packages">
+                            <div id="navbar-scroll" class="list-group list-group-horizontal text-center" id="navbar-scroll">
+                                <a class="list-group-item list-group-item-action py-1" href="#travel_packages">
                                     Peru travel
                                 </a>
-                                <a class="list-group-item list-group-item-action" href="#machupicchu_tours">Machu Picchu Tours</a>
-                                <a class="list-group-item list-group-item-action" href="#luxury_travel">Luxury Travel</a>
+                                <a class="list-group-item list-group-item-action py-1" href="#machupicchu_tours">Machu Picchu Tours</a>
+                                <a class="list-group-item list-group-item-action py-1" href="#luxury_travel">Luxury Travel</a>
                             </div>
 
                         </div>
@@ -90,17 +90,13 @@
                 </div>
             </div>
 
-            <section class="mt-5" id="machupicchu_tours">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
+
+
+                <div class="container-fluid pt-5" id="machupicchu_tours">
+                    <div class="row no-gutters">
+                        <div class="col-12 pt-1 px-5">
                             <h2 class="font-weight-bold h4">Tours <span class="text-g-green">Machu Picchu</span></h2>
                         </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row no-gutters">
                         @foreach($paquetes_t as $paquete)
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex p-2">
                                 <div class=" w-100">
@@ -130,19 +126,11 @@
                     </div>
                 </div>
 
-            </section>
-            <section class="mt-5" id="luxury_travel">
-
-                <div class="container">
+                <div class="container-fluid pt-5" id="luxury_travel">
                     <div class="row no-gutters">
-                        <div class="col">
-                            <h2 class="font-weight-bold h4">Luxury <span class="text-g-green">packages</span></h2>
+                        <div class="col-12 pt-1 px-5">
+                            <h2 class="font-weight-bold h4">Luxury <span class="text-g-green">Packages</span></h2>
                         </div>
-                    </div>
-                </div>
-
-                <div class="container-fluid">
-                    <div class="row no-gutters">
                         @foreach($categoria_luxury as $category)
 
                             @if (isset($category->categoria))
@@ -194,7 +182,7 @@
 
                     </div>
                 </div>
-            </section>
+
         </div>
 
     </section>

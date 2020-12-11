@@ -377,18 +377,17 @@
     <section class="bg-light py-5">
         <div class="container">
             <div class="row mb-4">
-                <div class="col-7">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 d-flex">
+
+                        <div class="col-12 col-sm-12 col-md-7">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
-                                    <a href=""><img class="w-100" src="{{asset('images/mapi')}}" alt=""></a>
+                                    <a href=""><img class="w-100" src="{{asset('images/mapi.jpg')}}" alt=""></a>
                                     <div class="position-absolute-bottom w-40 l-0 bg-e-yellow h-100 p-4">
                                         <h4 class="text-white font-weight-bold">MachuPicchu & Rainbow Mountain</h4>
                                         <p class="text-white small">The mountains and valleys around Cusco all behold a fascinating story. On this Andean adventure, discover these tales and make new ones as you wander through a world wonder as MachuPicchu , natural landscapes at the Rainbow Mountain and live history in Cusco.</p>
                                         <div class="row no-gutters align-items-center">
                                             <div class="col-auto">
-                                                <p class="font-weight-bold text-white h6 pr-2 m-0">6 Days</p>
+                                                <p class="font-weight-bold text-white h6 pr-2 m-0">62 Days</p>
                                             </div>
                                             <div class="col-auto">
                                                 <p class="font-weight-bold small text-white m-0"><sup class="small"><small><del>500</del></small></sup> $50<small>USD</small></p>
@@ -401,11 +400,9 @@
 
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 d-flex mb-3">
+
+
+                        <div class="col-12 col-sm-12 col-md-5 mb-4">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
@@ -427,7 +424,7 @@
 
                             </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-12 d-flex">
+                        <div class="col-12 col-sm-12 col-md-5 float-left">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
@@ -449,13 +446,12 @@
 
                             </div>
                         </div>
-                    </div>
-                </div>
+
             </div>
             <div class="row">
                 <div class="col">
                     <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 d-flex mb-3">
+                        <div class="col-12 col-sm-12 col-md-12 d-flex mb-4">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
                                     <a href=""><img class="w-100" src="{{asset('images/asc.jpg')}}" alt=""></a>
@@ -506,7 +502,7 @@
                         <div class="col-12 col-sm-12 col-md-12 d-flex">
                             <div class="w-100 shadow-sm">
                                 <div class="header-img-packages bx-img-destinohome position-relative">
-                                    <a href=""><img class="w-100" src="{{asset('images/mapi')}}" alt=""></a>
+                                    <a href=""><img class="w-100" src="{{asset('images/mapi.jpg')}}" alt=""></a>
                                     <div class="position-absolute-bottom w-40 l-0 bg-e-cream h-100 p-4">
 
                                         <h4 class=" font-weight-bold">MachuPicchu Full Day Tour by Expedition</h4>
@@ -630,6 +626,74 @@
                                 </div>
                                 </a>
                             </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="p-0 m-0 text-decoration-none font-weight-bold text-dark bx-category">
+                                        <div class="row no-gutters position-relative">
+                                            <div class="card w-100 shadow-sm">
+                                                <div class="row align-items-center no-gutters">
+                                                    <div class="col-5">
+                                                        <img src="{{$categorias->imagen}}" alt="" class="rounded-left w-100 img-gray">
+                                                    </div>
+                                                    <div class="col-md position-static px-3 py-2">
+                                                        {{$categorias->nombre}}
+                                                        <span class="small d-block text-muted">2 packages</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="p-0 m-0 text-decoration-none font-weight-bold text-dark bx-category">
+                                        <div class="row no-gutters position-relative">
+                                            <div class="card w-100 shadow-sm">
+                                                <div class="row align-items-center no-gutters">
+                                                    <div class="col-5">
+                                                        <img src="{{$categorias->imagen}}" alt="" class="rounded-left w-100 img-gray">
+                                                    </div>
+                                                    <div class="col-md position-static px-3 py-2">
+                                                        {{$categorias->nombre}}
+                                                        <span class="small d-block text-muted">2 packages</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="p-0 m-0 text-decoration-none font-weight-bold text-dark bx-category">
+                                        <div class="row no-gutters position-relative">
+                                            <div class="card w-100 shadow-sm">
+                                                <div class="row align-items-center no-gutters">
+                                                    <div class="col-5">
+                                                        <img src="{{$categorias->imagen}}" alt="" class="rounded-left w-100 img-gray">
+                                                    </div>
+                                                    <div class="col-md position-static px-3 py-2">
+                                                        {{$categorias->nombre}}
+                                                        <span class="small d-block text-muted">2 packages</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="p-0 m-0 text-decoration-none font-weight-bold text-dark bx-category">
+                                        <div class="row no-gutters position-relative">
+                                            <div class="card w-100 shadow-sm">
+                                                <div class="row align-items-center no-gutters">
+                                                    <div class="col-5">
+                                                        <img src="{{$categorias->imagen}}" alt="" class="rounded-left w-100 img-gray">
+                                                    </div>
+                                                    <div class="col-md position-static px-3 py-2">
+                                                        {{$categorias->nombre}}
+                                                        <span class="small d-block text-muted">2 packages</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             @endforeach
                         </div>
                         <!-- Add Pagination -->
@@ -725,6 +789,27 @@
         </div>
     </section>
 
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-8">
+
+                    <img src="{{asset('images/bi-local-development.jpg')}}" alt="" class="img-fluid">
+                </div>
+                <div class="col">
+                    <img src="{{asset('images/me-hotels.jpg')}}" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="{{asset('images/me-hotels.jpg')}}" alt="" class="img-fluid">
+                </div>
+                <div class="col-8">
+                    <img src="{{asset('images/bi-local-development.jpg')}}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
 {{--    <section class="bg-light py-5">--}}
 {{--        <div class="container">--}}
 {{--            <div class="row">--}}
@@ -834,33 +919,7 @@
 
 @push('scripts')
     <script>
-        var swiper = new Swiper('.swiper-category', {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
 
-        var swiper = new Swiper('.swiper-container', {
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        var swiper = new Swiper('.swiper-destino', {
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
 
     </script>
 @endpush

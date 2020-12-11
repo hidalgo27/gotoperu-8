@@ -54,7 +54,7 @@
                                             <div class="row">
                                                 <div class="col text-center">
                                                     <img src="https://gotoperu-com.s3-us-west-1.amazonaws.com/logos/logo-gotoperu-white.png" alt="logo gotoperu" class="w-100">
-                                                    <p class="small font-weight-bold text-secondary pt-3 m-0">Offices.</p>
+{{--                                                    <p class="small font-weight-bold text-secondary pt-3 m-0">Offices.</p>--}}
                                                 </div>
                                             </div>
                                         </div>
@@ -65,27 +65,27 @@
 
                     </div>
 
-                    <div class="row py-5">
+{{--                    <div class="row py-5">--}}
 
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>
-                        </div>
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>
-                        </div>
+{{--                        <div class="col">--}}
+{{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
+{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>--}}
+{{--                        </div>--}}
+{{--                        <div class="col">--}}
+{{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
+{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>--}}
+{{--                        </div>--}}
+{{--                        <div class="col">--}}
+{{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
+{{--                            <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>--}}
+{{--                        </div>--}}
+{{--                        <div class="col">--}}
+{{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
+{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>--}}
+{{--                        </div>--}}
 
 
-                    </div>
+{{--                    </div>--}}
                 <div class="row py-5">
                     <div class="col-6 col-sm mb-3 text-white">
                         <p class="small text-g-yellow font-weight-bold">GENERAL</p>
@@ -325,9 +325,9 @@
     $(function () {
         $('#main_navbar').bootnavbar();
     });
-    $(document).ready(function(){
-        $('.venobox').venobox();
-    });
+    // $(document).ready(function(){
+    //     $('.venobox').venobox();
+    // });
 
 
     // $(document).ready(function() {
@@ -349,9 +349,9 @@
     // }
 </script>
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf1RN8KKGNdS-iEarIgXpaqa-khw7EmZI&callback=initMap">
-</script>
+{{--<script async defer--}}
+{{--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf1RN8KKGNdS-iEarIgXpaqa-khw7EmZI&callback=initMap">--}}
+{{--</script>--}}
 
 </body>
 </html>
