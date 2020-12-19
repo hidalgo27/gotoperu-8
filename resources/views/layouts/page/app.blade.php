@@ -17,7 +17,7 @@
 {{--    <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=710&amp;locationId=15202262&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>--}}
 
 </head>
-<body data-spy="scroll" data-target="#navbar-scroll">
+<body data-bs-spy="scroll" data-bs-target="#navbar-scroll">
 <div id="app">
 
 
@@ -28,7 +28,7 @@
     {{--            <div class="row justify-content-end">--}}
     {{--                <div class="col-auto">--}}
     {{--                    <div class="bg-dark rounded px-3 mx-3 shadow clearfix float-right">--}}
-    {{--                        <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="font-weight-bold text-white stretched-link">--}}
+    {{--                        <a href="https://api.whatsapp.com/send?phone=5117059774" target="_blank" class="fw-bold text-white stretched-link">--}}
     {{--                            Escríbenos por WhatsApp--}}
     {{--                            <img src="{{asset('images/icons/whatsapp-i.png')}}" class="py-1" alt="logo whatsapp" width="50" data-toggle="tooltip" data-placement="top" title="Perú">--}}
     {{--                        </a>--}}
@@ -54,7 +54,7 @@
                                             <div class="row">
                                                 <div class="col text-center">
                                                     <img src="https://gotoperu-com.s3-us-west-1.amazonaws.com/logos/logo-gotoperu-white.png" alt="logo gotoperu" class="w-100">
-{{--                                                    <p class="small font-weight-bold text-secondary pt-3 m-0">Offices.</p>--}}
+{{--                                                    <p class="small fw-bold text-secondary pt-3 m-0">Offices.</p>--}}
                                                 </div>
                                             </div>
                                         </div>
@@ -69,26 +69,26 @@
 
 {{--                        <div class="col">--}}
 {{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124130.91048588227!2d-72.00928965263964!3d-13.530009562312076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd5d826598431%3A0x2aa996cc2318315d!2sCusco!5e0!3m2!1ses-419!2spe!4v1587843412901!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
-{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Av. El Sol 449</p>--}}
+{{--                            <p class="small fw-bold text-secondary text-center m-0">Av. El Sol 449</p>--}}
 {{--                        </div>--}}
 {{--                        <div class="col">--}}
 {{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.72044709852!2d-77.12786600649636!3d-12.02660339953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses-419!2spe!4v1587843507975!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
-{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>--}}
+{{--                            <p class="small fw-bold text-secondary text-center m-0">Avenida Jose Larco 1232</p>--}}
 {{--                        </div>--}}
 {{--                        <div class="col">--}}
 {{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641077636!2d-74.2478940828109!3d4.648283717287737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses-419!2spe!4v1587843538327!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
-{{--                            <p class="small font-weight-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>--}}
+{{--                            <p class="small fw-bold text-secondary text-center m-0">78 SW 7th St, Miami, FL 33130</p>--}}
 {{--                        </div>--}}
 {{--                        <div class="col">--}}
 {{--                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925899963!2d-80.29949884279218!3d25.782390733236642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses-419!2spe!4v1587843561199!5m2!1ses-419!2spe" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>--}}
-{{--                            <p class="small font-weight-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>--}}
+{{--                            <p class="small fw-bold text-secondary text-center m-0">Calle 26 # 92-32, Bogotá 110911</p>--}}
 {{--                        </div>--}}
 
 
 {{--                    </div>--}}
                 <div class="row py-5">
                     <div class="col-6 col-sm mb-3 text-white">
-                        <p class="small text-g-yellow font-weight-bold">GENERAL</p>
+                        <p class="small text-g-yellow fw-bold">GENERAL</p>
                         <ul class="m-0 text-g-yellow list-unstyled">
                             <li><a href="/" class="text-light font-weight-semi-bold small">Home</a></li>
                             {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">Request a Brochure</a></li>--}}
@@ -97,7 +97,7 @@
                     </div>
 
                     <div class="col-6 col-sm mb-3 text-white">
-                        <p class="small text-g-yellow font-weight-bold">About Us</p>
+                        <p class="small text-g-yellow fw-bold">About Us</p>
                         <ul class="m-0 list-unstyled">
                             <li><a href="{{route('about_path')}}" class="text-light font-weight-semi-bold small">Our History</a></li>
                             <li><a href="{{route('social_path')}}" class="text-light font-weight-semi-bold small">Social Responsability</a></li>
@@ -108,7 +108,7 @@
                     </div>
 
                     <div class="col-6 col-sm mb-3 text-white">
-                        <p class="small text-g-yellow font-weight-bold">Resources</p>
+                        <p class="small text-g-yellow fw-bold">Resources</p>
                         <ul class="m-0 list-unstyled">
                             {{--                                <li><a href="https://www.gotoperu.com/frequently-asked-questions" class="text-light font-weight-semi-bold small">FAQ</a></li>--}}
                             {{--                                <li><a href="https://www.gotoperu.com/packages/category" class="text-light font-weight-semi-bold small">Travel Categories</a></li>--}}
@@ -118,7 +118,7 @@
                     </div>
 
                     <div class="col-6 col-sm mb-3 text-white">
-                        <p class="small text-g-yellow font-weight-bold">Community</p>
+                        <p class="small text-g-yellow fw-bold">Community</p>
                         <ul class="m-0 text-g-yellow list-unstyled">
                             {{--                                <li><a href="#" class="text-light font-weight-semi-bold small">GOTOPERU Blog</a></li>--}}
                             <li><a href="{{route('review_path')}}" class="text-light font-weight-semi-bold small">Video Testimonials</a></li>
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="col-6 col-sm mb-3 text-white">
-                        <p class="small text-g-yellow font-weight-bold">Travel Agents</p>
+                        <p class="small text-g-yellow fw-bold">Travel Agents</p>
                         <div class="rgba-black-5 p-4">
                             <p class="small text-light">As an agent of change, you have the power to change the world.</p>
                             <a href="{{route('contact_path')}}" class="btn btn-g-green font-weight-semi-bold btn-sm btn-block rounded-0">Contact Us</a>
@@ -253,10 +253,15 @@
 {{--<script src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/d1b447b4-892c-4562-a6dc-536d0eb23944-loader.js" ></script>--}}
 @stack('scripts')
 <script>
-    feather.replace();
+    // feather.replace();
     $(document).ready(function(){
         $('.venobox').venobox();
     });
+    // $('.grid').masonry({
+    //     // options
+    //     itemSelector: '.grid-item',
+    //     columnWidth: 200
+    // });
     // $('a[href^="#"]').on('click', function(event) {
     //     var target = $(this.getAttribute('href'));
     //     if( target.length ) {
@@ -266,65 +271,66 @@
     //         }, 1000);
     //     }
     // });
+
 </script>
 <script>
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').tooltip()
+    // });
     // $('.navbar [data-toggle="dropdown"]').bootstrapDropdownHover({
     //     // see next for specifications
     // });
 
-    (function($) {
-        var defaults={
-            sm : 540,
-            md : 720,
-            lg : 960,
-            xl : 1140,
-            navbar_expand: 'lg',
-            animation: true,
-            animateIn: 'fadeIn',
-        };
-        $.fn.bootnavbar = function(options) {
-
-            var screen_width = $(document).width();
-            settings = $.extend(defaults, options);
-
-            if(screen_width >= settings.lg){
-                $(this).find('.dropdown').hover(function() {
-                    $(this).addClass('show');
-                    $(this).find('.dropdown-menu').first().addClass('show');
-                    if(settings.animation){
-                        $(this).find('.dropdown-menu').first().addClass('animated ' + settings.animateIn);
-                    }
-                }, function() {
-                    $(this).removeClass('show');
-                    $(this).find('.dropdown-menu').first().removeClass('show');
-                });
-            }
-
-            $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-                if (!$(this).next().hasClass('show')) {
-                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
-                }
-                var $subMenu = $(this).next(".dropdown-menu");
-                $subMenu.toggleClass('show');
-
-                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                    $('.dropdown-submenu .show').removeClass("show");
-                });
-
-                return false;
-            });
-        };
-    })(jQuery);
+    // (function($) {
+    //     var defaults={
+    //         sm : 540,
+    //         md : 720,
+    //         lg : 960,
+    //         xl : 1140,
+    //         navbar_expand: 'lg',
+    //         animation: true,
+    //         animateIn: 'fadeIn',
+    //     };
+    //     $.fn.bootnavbar = function(options) {
+    //
+    //         var screen_width = $(document).width();
+    //         settings = $.extend(defaults, options);
+    //
+    //         if(screen_width >= settings.lg){
+    //             $(this).find('.dropdown').hover(function() {
+    //                 $(this).addClass('show');
+    //                 $(this).find('.dropdown-menu').first().addClass('show');
+    //                 if(settings.animation){
+    //                     $(this).find('.dropdown-menu').first().addClass('animated ' + settings.animateIn);
+    //                 }
+    //             }, function() {
+    //                 $(this).removeClass('show');
+    //                 $(this).find('.dropdown-menu').first().removeClass('show');
+    //             });
+    //         }
+    //
+    //         $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+    //             if (!$(this).next().hasClass('show')) {
+    //                 $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    //             }
+    //             var $subMenu = $(this).next(".dropdown-menu");
+    //             $subMenu.toggleClass('show');
+    //
+    //             $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+    //                 $('.dropdown-submenu .show').removeClass("show");
+    //             });
+    //
+    //             return false;
+    //         });
+    //     };
+    // })(jQuery);
 
 </script>
 
 <script>
-    $(function () {
-        $('#main_navbar').bootnavbar();
-    });
+    // $(function () {
+    //     $('#main_navbar').bootnavbar();
+    // });
     // $(document).ready(function(){
     //     $('.venobox').venobox();
     // });

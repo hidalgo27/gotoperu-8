@@ -19,26 +19,12 @@ import locale from "element-ui/src/locale/lang/es";
 // Vue.use(Loading);
 Vue.use(ElementUI, {locale});
 
-import Swiper from "swiper";
-// Vue.use(Swiper);
+
+// import masonry from 'masonry-layout/masonry'
+// // import "swiper/swiper-bundle";
+// Vue.use(masonry);
 // import Swiper JS
-const swiper = new Swiper('.swiper-category', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
+
 
 // var Swiper = new Swiper('.swiper-container', {
 //     navigation: {

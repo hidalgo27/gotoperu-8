@@ -22,12 +22,22 @@
     <list default="true" id="3e5ca6f8-a237-4dd8-bb53-0e380d037528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mapi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/mapi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/me-hotels.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/me-hotels.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/plugins.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ItineraryComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ItineraryComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head-home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page/head.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/detail.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/page/packages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/packages.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
@@ -208,7 +218,12 @@
       <workItem from="1607191304485" duration="864000" />
       <workItem from="1607192927096" duration="3354000" />
       <workItem from="1607357622602" duration="447000" />
-      <workItem from="1607519970732" duration="1678000" />
+      <workItem from="1607519970732" duration="13295000" />
+      <workItem from="1607866048232" duration="14230000" />
+      <workItem from="1608037819508" duration="2336000" />
+      <workItem from="1608131028733" duration="5864000" />
+      <workItem from="1608209354935" duration="13803000" />
+      <workItem from="1608383244977" duration="9378000" />
     </task>
     <servers />
   </component>

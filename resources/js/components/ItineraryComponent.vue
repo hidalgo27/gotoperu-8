@@ -2,7 +2,7 @@
     <div>
         <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-12">
                     <el-button type="warning" class="w-100 font-weight-bold font-size-extra-large" icon="el-icon-edit" @click="ruleForm.dialogVisible = true">Book Now</el-button>
                 </div>
                 <el-dialog
