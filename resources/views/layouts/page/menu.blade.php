@@ -38,16 +38,16 @@
 {{--                    <li><a class="dropdown-item" href="#">Tours 2</a></li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{route('packages_path')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PERU TRAVEL PACKAGES
-                </a>
-                <div class="dropdown-menu animate slideIn w-100" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Machu Picchu Tours</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Luxury Packages</a>
-                </div>
-            </li>
+{{--            <li class="nav-item dropdown">--}}
+{{--                <a class="nav-link dropdown-toggle" href="{{route('packages_path')}}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                    PERU TRAVEL PACKAGES--}}
+{{--                </a>--}}
+{{--                <div class="dropdown-menu animate slideIn w-100" aria-labelledby="navbarDropdown">--}}
+{{--                    <a class="dropdown-item" href="#">Machu Picchu Tours</a>--}}
+{{--                    <div class="dropdown-divider"></div>--}}
+{{--                    <a class="dropdown-item" href="#">Luxury Packages</a>--}}
+{{--                </div>--}}
+{{--            </li>--}}
 
 {{--            <li class="nav-item dropdown">--}}
 {{--                <a class="nav-link dropdown-toggle" href="{{route('packages_path')}}" id="navbarDropdown" role="button"--}}
@@ -83,7 +83,10 @@
 {{--            </li>--}}
 
             <li class="nav-item">
-                <a class="nav-link" href="{{route('luxury_path')}}">DESTINATIONS</a>
+                <a class="nav-link" href="{{route('packages_path')}}">TRAVEL PACKAGES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('destination_path')}}">DESTINATIONS</a>
             </li>
 
             <li class="nav-item">

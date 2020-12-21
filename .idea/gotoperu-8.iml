@@ -113,6 +113,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/voku/stop-words" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jbroadway/urlify" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alexpechkarev/geometry-library" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/alexpechkarev/google-maps" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
